@@ -1,35 +1,73 @@
+
+
+
+
 #include <iostream>
 
-class Person {
+#include <string>
+
+class Student {
+
 private:
-    std::string name; // Private attribute
-    int age;         // Private attribute
 
-public:
-    // Public method to set name
-    void setName(std::string n) {
-        name = n; // Update name
+   std:: string studentName;
+
+   int Roll_Number;
+
+ public:
+
+  void Naam(std:: string name) {
+
+    studentName = name;
+
+
+
+  }
+
+        void Roll(int roll){
+
+
+            Roll_Number = roll;
+
+
+        } 
+      
+    void show() const {
+
+     std::cout << "Name: " << studentName << std::endl;
+
+     std::cout << "Roll Number: " << Roll_Number << std::endl;
+
+
+
     }
 
-    // Public method to set age
-    void setAge(int a) {
-        if (a > 0) { // Ensure the age is valid
-            age = a; // Update age
-        }
-    }
+  
 
-    // Public method to display person details
-    void displayInfo() const {
-        std::cout << "Name: " << name << ", Age: " << age << "\n";
-    }
+
+
+
+
+
+
 };
 
-int main() {
-    Person person; // Create a Person object
+int main(){
 
-    person.setName("Alice"); // Set the name
-    person.setAge(25);        // Set the age
-    person.displayInfo();     // Display person details
+Student student;
 
-    return 0;
+student.Naam("Ashish");
+
+student.Roll(6);
+
+student.show();
+
+
+
+
 }
+
+
+
+
+
